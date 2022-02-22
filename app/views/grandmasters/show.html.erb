@@ -1,0 +1,19 @@
+<h1>My <em>Grandmaster<em> profile</h1>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h2><%= @grandmaster.user.name %></h2>
+      From <%= @grandmaster.country %><br>
+      Language : <%= @grandmaster.language %><br>
+      Elo rating : <%= @grandmaster.elo_rating %><br>
+      Fide ID : <%= @grandmaster.fide_id %>
+      <br>
+      <br>
+      A word from the grandmaster:<br>
+      <blockquote>"<%= @grandmaster.bio %>"</blockquote>
+      <br>
+      <%= link_to 'Home', root_path %>
+    </div>
+  </div>
+</div>

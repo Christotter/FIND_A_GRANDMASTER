@@ -1,4 +1,6 @@
 class GrandmastersController < ApplicationController
+  # before_action :set_user, only: %i[ show ]
+
   def index
     @grandmasters = Grandmaster.all
   end
@@ -28,6 +30,10 @@ class GrandmastersController < ApplicationController
   end
 
   private
+
+  # def set_user
+  #   @user = User.find(params[:id])
+  # end
 
   def grandmaster_params
     params.require(:grandmaster).permit(:fullname, :country, :bio, :fide_id, :language)
