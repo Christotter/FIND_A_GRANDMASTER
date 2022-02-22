@@ -1,15 +1,7 @@
-<!--<h1>Our grandmasters <h1>
-<div>
-  <ul>
-    <% @grandmasters.each do |grandmaster|%>
-      <li>
-        <%= link_to grandmaster.user.name, grandmaster_path(grandmaster) %>
-      </li>
-    <% end %>
-  </ul>
-</div> -->
 
 <h1 class="text-center">Our grandmasters</h1>
+
+<%= link_to "New GM", new_grandmaster_path %>
 
 <div class="container">
   <div class="row mt-4">
