@@ -1,12 +1,10 @@
 <!-- app/views/grandmasters/_form.html.erb -->
-<%= form_for(@grandmaster) do |f| %>
-  <%= f.label :elo_rating %>
-  <%= f.text_field :elo_rating %>
-  <%= f.label :fide_id %>
-  <%= f.text_field :fide_id %>
-  <%= f.label :language %>
-  <%= f.select :language, options_for_select([['English', 'en'], ['French', 'fr'], ['Spanish', 'sp']], :language)%>
-  <%= f.label :bio %>
-  <%= f.text_area :bio %>
-  <%= f.submit %>
-<% end %>
+
+      <%= simple_form_for(@grandmaster) do |f| %>
+        <%= f.input :elo_rating %>
+        <%= f.input :fide_id %>
+        <%= f.input :language, collection: [['English', 'en'], ['French', 'fr'], ['Spanish', 'sp']]%>
+        <%= f.input :country %>
+        <%= f.input :bio %>
+        <%= f.submit %>
+      <% end %>
