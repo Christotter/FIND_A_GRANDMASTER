@@ -1,16 +1,17 @@
 .gm-form{
   background-color: rgb(255, 255, 255);
-  padding: 50px;
+  padding: 0px 50px;
   box-shadow: 10px 10px 5px gray;
+  max-width: 700px;
   height: 700px;
 }
 
 .gm_image{
-  position: absolute;
-  left: 200px;
+  //position: absolute;
+
   width: 250px;
   height: 250px;
-  top: 150px;
+  margin-top: 100px;
   opacity: 0.9;
 }
 
