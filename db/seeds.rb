@@ -16,10 +16,10 @@ user3 = User.create!(email: "mat@chess.com", name: "Mathias Grand", password: "1
 user4 = User.create!(email: "miq@chess.com", name: "Miquel Sogood", password: "123456", password_confirmation: "123456")
 user5 = User.create!(email: "chris@chess.com", name: "Chris Notbad", password: "123456", password_confirmation: "123456")
 
-gm1 = Grandmaster.new(fide_id: 12345, elo_rating: 2521, user: user1)
+gm1 = Grandmaster.new(fide_id: 12345, elo_rating: 2521, country: 'Malta', bio: 'I like cats and chess.', language: 'french', user: user1)
 gm1.save!
-gm2 = Grandmaster.new(fide_id: 1111, elo_rating: 9000, user: user2)
+gm2 = Grandmaster.new(fide_id: 1111, elo_rating: 9000, country: 'Georgia', bio: "I'm simply the best.", language: 'english', user: user2)
 gm2.save!
-gm3 = Grandmaster.new(fide_id: 2222, elo_rating: 2700, user: user3)
+gm3 = Grandmaster.new(fide_id: 2222, elo_rating: 2700, country: 'Denmark', bio: "I'm the best after Lali.", language: 'english', user: user3)
 gm3.save!
 puts 'Finished!'
