@@ -24,7 +24,8 @@
 
 
           <li class="nav-item dropdown nav-link">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <%= image_tag "components/user.svg" %>
+<%#             <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ %>            <%= image_tag "components/user.svg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <% if user_signed_in? %>
                 <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
