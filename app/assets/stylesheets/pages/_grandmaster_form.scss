@@ -1,21 +1,21 @@
 .gm-form{
-  background-color: rgb(255, 255, 255);
-  padding: 50px;
-  box-shadow: 10px 10px 5px gray;
+  background-color: $white;
+  padding: 0px 50px;
+  box-shadow: 10px 10px 5px $dimgray;
+  max-width: 700px;
   height: 700px;
 }
 
 .gm_image{
-  position: absolute;
-  left: 200px;
   width: 250px;
-  height: 250px;
-  top: 150px;
+  height: 400px;
+  margin-top: 35px;
   opacity: 0.9;
 }
 
 .h1_gm{
-  color:dimgray;
+  color: $dimgray;
   display: flex;
   justify-content: center;
+  font-family: $headers-font;
 }
