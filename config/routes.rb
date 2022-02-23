@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   resources :grandmasters do
     resources :bookings, only: [:new, :create]
   end
-  resources :bookings, only: :destroy
+  resources :bookings, only: [:destroy, :index]
 end
