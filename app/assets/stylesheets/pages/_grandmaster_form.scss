@@ -1,7 +1,7 @@
 .gm-form{
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   padding: 0px 50px;
-  box-shadow: 10px 10px 5px gray;
+  box-shadow: 10px 10px 5px $dimgray;
   max-width: 700px;
   height: 700px;
 }
@@ -16,7 +16,7 @@
 }
 
 .h1_gm{
-  color:dimgray;
+  color: $dimgray;
   display: flex;
   justify-content: center;
 }
