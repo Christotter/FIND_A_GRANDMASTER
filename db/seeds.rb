@@ -26,10 +26,10 @@ gm2 = Grandmaster.new(fide_id: 1111, elo_rating: 9000, country: 'Georgia', bio: 
 gm2.save!
 gm3 = Grandmaster.new(fide_id: 2222, elo_rating: 2700, country: 'Denmark', bio: "I'm the best after Lali.", language: 'english', user: user3)
 gm3.save!
-gm3 = Grandmaster.new(fide_id: 3123, elo_rating: 2120, country: 'Norwey', bio: "I'm amazing, cheap and a good teacher", language: 'english', user: user6)
-gm3.save!
-gm3 = Grandmaster.new(fide_id: 2341, elo_rating: 3213, country: 'poland', bio: "I'm amazing, cheap and a good teacher", language: 'english', user: user7)
-gm3.save!
+gm4 = Grandmaster.new(fide_id: 3123, elo_rating: 2120, country: 'Norwey', bio: "I'm amazing, cheap and a good teacher", language: 'english', user: user6)
+gm4.save!
+gm5 = Grandmaster.new(fide_id: 2341, elo_rating: 3213, country: 'poland', bio: "I'm amazing, cheap and a good teacher", language: 'english', user: user7)
+gm5.save!
 
 
 
