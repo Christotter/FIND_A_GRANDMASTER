@@ -28,16 +28,16 @@ class BookingsController < ApplicationController
   end
 
   def destroy
-   # @booking = Booking.find(params[:id])
-   # @list = @bookmark.list
-   # @booking.destroy
-   # redirect_to grandmaster_path(@grandmaster)
-  # redirect_to user_path(@user)
+    # @booking = Booking.find(params[:id])
+    # @list = @bookmark.list
+    # @booking.destroy
+    # redirect_to grandmaster_path(@grandmaster)
+    # redirect_to user_path(@user)
   end
 
   private
 
   def booking_params
-   # params.require(:booking).permit(:message, :status, :user_id, :gm_profile_id)
+    # params.require(:booking).permit(:message, :status, :user_id, :gm_profile_id)
   end
 end

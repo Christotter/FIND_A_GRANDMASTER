@@ -36,6 +36,6 @@ class GrandmastersController < ApplicationController
   # end
 
   def grandmaster_params
-    params.require(:grandmaster).permit(:fullname, :country, :bio, :fide_id, :language)
+    params.require(:grandmaster).permit(:fullname, :country, :bio, :fide_id, :language, :photo)
   end
 end
