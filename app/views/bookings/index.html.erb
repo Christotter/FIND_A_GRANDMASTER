@@ -1,0 +1,13 @@
+<% @sent_bookings.each do |booking| %>
+  <%= booking.message %>
+  <%= booking.grandmaster_user.name %>
+<% end %>
+
+-------
+<br>
+<br>
+
+<% @received_bookings.each do |booking| %>
+  <%= booking.message %>
+  <%= booking.user.name %>
+<% end %>

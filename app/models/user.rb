@@ -4,7 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :bookings, dependent: :destroy # bookings created by the user
+  has_many :sent_bookings, dependent: :destroy, class_name: "Booking" # bookings created by the user
+
   has_one :grandmaster, dependent: :destroy
   has_many :received_bookings, through: :grandmaster, source: :bookings
 

@@ -3,8 +3,9 @@ class BookingsController < ApplicationController
     # @bookings = Booking.all
     # current_user
     # @bookings = Booking.find(params[:id])
-    @user = User.find(session[:user_id])
-    @bookings = @user.bookings
+    # warden.user.user.key
+    @sent_bookings = current_user.sent_bookings
+    @received_bookings = current_user.received_bookings
   end
 
   def new

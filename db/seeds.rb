@@ -6,9 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Cleaning db..."
-if Rails.env.development?
-  User.destroy_all
-end
+# if Rails.env.development?
+#   User.destroy_all
+#   Grandmaster.destroy_all
+#   Booking.destroy_all
+# end
 
 user1 = User.create!(email: "bob@chess.com", name: "Bob Chess", password: "123456", password_confirmation: "123456")
 user2 = User.create!(email: "lali@chess.com", name: "Lali Kickass", password: "123456", password_confirmation: "123456")
