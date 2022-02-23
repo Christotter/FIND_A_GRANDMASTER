@@ -9,12 +9,8 @@
 
 .h1_user{
   color: $dimgray;
-  display: flex;
-  justify-content: center;
+  //display: flex;
+ // justify-content: center;
   font-family: $headers-font;
-  padding: 50px;
-}
-
-.user_form{
-  padding: 50px;
+  padding: 50px !important;
 }
