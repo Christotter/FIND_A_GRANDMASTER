@@ -9,5 +9,7 @@ class User < ApplicationRecord
   has_one :grandmaster, dependent: :destroy
   has_many :received_bookings, through: :grandmaster, source: :bookings
 
+  has_one_attached :photo
+
   validates :name, presence: true
 end
