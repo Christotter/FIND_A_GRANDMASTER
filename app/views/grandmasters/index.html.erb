@@ -5,7 +5,11 @@
     <% @grandmasters.each do |grandmaster|%>
       <div class="col-sm-12 col-md-4 col-lg-4 py-3">
         <div class="card">
-          <img class="card-image-middle avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" alt="Card" >
+            <% if grandmaster.user.photo.attached? %>
+              <%= cl_image_tag grandmaster.user.photo.key, class: "card-image-middle avatar" %>
+            <% else %>
+              <img class="card-image-middle avatar" src="https://thezugzwangblog.com/wp-content/uploads/2020/07/kasparaov-1024x574.jpg" alt="Card">
+            <% end %>
             <div class="card-body text-center">
               <h5 class="card-title"><%= grandmaster.user.name %></h5>
               <p class="card-text"><%= grandmaster.bio %></p>

@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
     <div id="logo">
       <%= image_tag "components/Logo.svg"  %>
       </div>
@@ -14,7 +14,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Bookings</a>
+
+            <a class="nav-link" href="bookings">Bookings</a>
+
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Messages</a>
@@ -22,7 +24,8 @@
 
 
           <li class="nav-item dropdown nav-link">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <%= image_tag "components/user.svg" %>
+<%#             <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ %>            <%= image_tag "components/user.svg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <% if user_signed_in? %>
                 <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
@@ -32,7 +35,6 @@
 
             </div>
           </li>
-
     </div>
   </div>
 </div>
