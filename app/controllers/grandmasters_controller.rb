@@ -15,7 +15,7 @@ class GrandmastersController < ApplicationController
 
   def create
     @grandmaster = Grandmaster.new(grandmaster_params)
-    @grandmaster.save
+    @grandmaster.user = current_user
     if @grandmaster.save
       redirect_to grandmaster_path(@grandmaster)
     else
