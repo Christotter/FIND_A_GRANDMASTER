@@ -1,16 +1,15 @@
 
-<h1 class="text-center">Our grandmasters</h1>
-
-<%= link_to "New GM", new_grandmaster_path %>
-
+<h1 class="text-center">Our Grandmasters</h1>
 <div class="container">
   <div class="row mt-4">
     <% @grandmasters.each do |grandmaster|%>
       <div class="col-sm-12 col-md-4 col-lg-4 py-3">
-        <div class="card shadow d-flex justify-content-center">
-          <h3 class="text-center">
-            <%= link_to grandmaster.user.name, grandmaster_path(grandmaster), class: "text-decoration-none d-block text-dark"%>
-          </h3>
+        <div class="card">
+          <img class="card-image-middle avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" alt="Card" >
+            <div class="card-body text-center">
+              <h5 class="card-title"><%= grandmaster.user.name %></h5>
+              <p class="card-text"><%= grandmaster.bio %></p>
+            </div>
         </div>
       </div>
     <% end %>

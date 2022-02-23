@@ -19,9 +19,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Messages</a>
           </li>
-          <%# <li class="nav-item"><%= image_tag "components/love.svg" %></li>
-          <li class="nav-item dropdown">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" <%= image_tag "components/user.svg" %>>
+
+
+          <li class="nav-item dropdown nav-link">
+            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <%= image_tag "components/user.svg" %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <% if user_signed_in? %>
                 <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
@@ -31,9 +32,7 @@
 
             </div>
           </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
-      </ul>
+
     </div>
   </div>
 </div>
