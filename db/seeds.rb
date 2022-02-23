@@ -23,3 +23,7 @@ gm2.save!
 gm3 = Grandmaster.new(fide_id: 2222, elo_rating: 2700, country: 'Denmark', bio: "I'm the best after Lali.", language: 'english', user: user3)
 gm3.save!
 puts 'Finished!'
+
+booking1 = Booking.create!(status: "accepted", message: "Hey! I want to learn from you :)", user: user4, grandmaster: gm2)
+booking2 = Booking.create!(status: "rejected", message: "Hey! I want to learn from you :)", user: user4, grandmaster: gm3)
+booking3 = Booking.create!(message: "Hey! I want to learn from you :)", user: user5, grandmaster: gm1)
