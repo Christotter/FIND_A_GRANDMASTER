@@ -83,3 +83,12 @@ p {
   left: 736px;
   top: 32px;
 }
+
+.hero-btn {
+  padding: 10px 20px;
+  background: $white;
+  border: 1px solid $dimgray;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-decoration: none;
+}
