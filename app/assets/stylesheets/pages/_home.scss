@@ -41,3 +41,45 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+
+// HERO ---------------->
+
+.hero-container {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+margin: 200px 150px;
+}
+
+h1 {
+font-size: 48px;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 32px 0px 0px;
+  position: static;
+  width: 672px;
+  height: 500px;
+  left: 32px;
+  top: 32px;
+}
+
+
+
+.hero-img img {
+  margin-left: 50px;
+  height: 450px;
+  left: 736px;
+  top: 32px;
+}
