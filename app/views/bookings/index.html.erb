@@ -1,6 +1,7 @@
 <% @sent_bookings.each do |booking| %>
-  <%= booking.message %>
-  <%= booking.grandmaster_user.name %>
+  Status : <%= booking.status %><br>
+  Message : <%= booking.message %><br>
+  Your Grandmaster : <%= booking.grandmaster_user.name %><br>
 <% end %>
 
 -------
@@ -8,6 +9,7 @@
 <br>
 
 <% @received_bookings.each do |booking| %>
-  <%= booking.message %>
-  <%= booking.user.name %>
+  Status : <%= booking.status %><br>
+  Message : <%= booking.message %><br>
+  Your pupil : <%= booking.user.name %><br>
 <% end %>
