@@ -1,6 +1,6 @@
 class GrandmastersController < ApplicationController
   # before_action :set_user, only: %i[ show ]
-
+  skip_before_action :authenticate_user!, only: [:index, :show]
   def index
     @grandmasters = Grandmaster.all
   end
@@ -36,6 +36,6 @@ class GrandmastersController < ApplicationController
   # end
 
   def grandmaster_params
-    params.require(:grandmaster).permit(:fullname, :country, :bio, :fide_id, :language, :photo)
+    params.require(:grandmaster).permit(:country, :bio, :fide_id, :language, :elo_rating)
   end
 end

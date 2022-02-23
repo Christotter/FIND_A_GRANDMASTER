@@ -24,8 +24,12 @@
           <li class="nav-item dropdown nav-link">
             <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <%= image_tag "components/user.svg" %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Login</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <% if user_signed_in? %>
+                <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+              <% else %>
+                <%= link_to 'Sign in', new_user_session_path, class: 'dropdown-item' %>
+              <% end %>
+
             </div>
           </li>
 
