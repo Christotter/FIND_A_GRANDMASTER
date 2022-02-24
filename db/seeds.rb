@@ -59,7 +59,6 @@ bio8 = 'Anish Kumar Giri is a Dutch chess grandmaster. A chess prodigy, he compl
 bio9 = 'Susan Polgar
 is a Hungarian and American chess grandmaster. Polgár was Women World Champion from 1996 to 1999.'
 
-
 gm1 = Grandmaster.new(fide_id: 2020009, elo_rating: 2792, country: 'United States of America', bio: bio1, language: 'english', user: user1)
 gm1.save!
 gm2 = Grandmaster.new(fide_id: 8602980, elo_rating: 2658, country: 'China', bio: bio2, language: 'english', user: user2)
