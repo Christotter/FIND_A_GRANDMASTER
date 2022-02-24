@@ -1,0 +1,18 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: $white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+#logo_footer {
+  height: 48px;
+  object-fit: cover;
+}
+
+.navbar-lewagon a {
+  margin: 0 12px;
+
+}
