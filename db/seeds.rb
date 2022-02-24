@@ -32,7 +32,7 @@ gm5 = Grandmaster.new(fide_id: 574, elo_rating: 25400, country: 'Denmark', bio: 
 gm5.save!
 puts 'Finished!'
 
-booking1 = Booking.create!(status: "accepted", message: "Hey! I want to learn from you :)", user: user4, grandmaster: gm2)
-booking2 = Booking.create!(status: "rejected", message: "Hey! I want to learn from you :)", user: user4, grandmaster: gm3)
-booking3 = Booking.create!(message: "Hey! I want to learn from you :)", user: user5, grandmaster: gm1)
-booking4 = Booking.create!(message: "Lali, you are the best, please teach me!", user: user1, grandmaster: gm2)
+booking1 = Booking.create!(status: "accepted", message: "Hey! I want to learn from you :)", user: user2, grandmaster: gm1)
+booking2 = Booking.create!(status: "rejected", message: "Hey! I want to learn from you :)", user: user1, grandmaster: gm2)
+booking3 = Booking.create!(message: "Hey! I want to learn from you :)", user: user2, grandmaster: gm1)
+booking4 = Booking.create!(message: "Lali, you are the best, please teach me!", user: user3, grandmaster: gm2)
