@@ -1,0 +1,39 @@
+.gm-show-card {
+    border-radius: 16px;
+    border: 1px solid $gray;
+    background-color: $white;;
+    padding: 60px;
+
+   display: flex;
+
+   .img-container {
+     flex-basis: 30%;
+
+   }
+}
+
+.gm-info-list {
+  list-style : none;
+}
+
+.gm-info-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-me-container {
+  text-align: center;
+}
+
+.photo-chess {
+  width: 300px;
+  max-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  justify-content: space-around;
+  object-fit: cover;
+  flex-shrink: 0;
+}
