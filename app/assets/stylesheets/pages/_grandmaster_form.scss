@@ -1,9 +1,14 @@
 .gm-form{
-  background-color: $white;
-  padding: 0px 50px;
-  box-shadow: 10px 10px 5px $dimgray;
+ /* padding: 0px 50px;*/
   max-width: 700px;
-  height: 700px;
+  height: 750px;
+  background-color: $white;
+  border: 1px solid #B4B4B4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .gm_image{
@@ -14,8 +19,6 @@
 }
 
 .h1_gm{
+  padding: 20px;
   color: $dimgray;
-  display: flex;
-  justify-content: center;
-  font-family: $headers-font;
 }
