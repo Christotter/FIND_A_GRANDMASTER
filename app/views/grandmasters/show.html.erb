@@ -1,12 +1,26 @@
 
 <h1 class="text-center">Grandmaster's Profile</h1>
-<div class="container">
-  <div class="row mt-4 justify-content-center">
-      <div class="card w-75 p-3">
-        <img class="card-image-left avatar" src="https://thezugzwangblog.com/wp-content/uploads/2020/07/kasparaov-1024x574.jpg" alt="Card">
-        <div class="card-body text-center">
-          <%= link_to "Book me", new_grandmaster_booking_path(@grandmaster), class: "hero-btn text-decoration-none" %>
-        </div>
+  <div class="container">
+    <div class="row mt-4 d-flex justify-content-around">
+      <div class="gm-show-card w-75">
+          <img class="card-image-middle photo-chess" src="https://thezugzwangblog.com/wp-content/uploads/2020/07/kasparaov-1024x574.jpg" alt="Card">
+          <div class="gm-info-container">
+            <ul class="gm-info-list">
+              <li><strong>Language</strong> - <%= @grandmaster.language.capitalize%></li>
+              <br>
+              <li><strong>Fide</strong> - <%= @grandmaster.fide_id %></li>
+              <br>
+              <li><strong>Country</strong> - <%= @grandmaster.country %></li>
+              <br>
+              <li><strong>Elo Rating</strong> - <%= @grandmaster.elo_rating %></li>
+              <br>
+              <li><strong>Bio</strong> - <%= @grandmaster.bio %></li>
+            </ul>
+            <div class="book-me-container">
+              <%= link_to "Book me", new_grandmaster_booking_path(@grandmaster), class: "hero-btn " %>
+            </div>
+          </div>
+          </div>
       </div>
-  </div>
+    </div>
 </div>
