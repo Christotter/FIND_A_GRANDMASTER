@@ -1,4 +1,4 @@
-.user-sign-form{
+._user-sign-form{
   background-color: $white;
   padding: 0px 50px;
   box-shadow: 10px 10px 5px $dimgray;
@@ -13,4 +13,17 @@
  // justify-content: center;
   font-family: $headers-font;
   padding: 50px !important;
+}
+
+.user-sign-form{
+  background-color: $white;
+  width: 500px;
+
+  border: 1px solid #B4B4B4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
 }
