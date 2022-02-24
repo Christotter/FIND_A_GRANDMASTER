@@ -1,10 +1,9 @@
-// Specific CSS for your home-page
-
+  // Specific CSS for your home-page
 .home-container {
-
   height: calc(100vh - 74px);
-}
+  color: $white;
 
+}
 
 
 .hero-text-container {
@@ -17,9 +16,11 @@
 
 h1 {
   font-size: 48px;
+  color: $white;
   }
 
   p {
+    color: $white;
     font-size: 16px;
   }
 
@@ -27,7 +28,7 @@ h1 {
 .hero-btn {
   padding: 10px 20px;
   background: $white;
-  border: 1px solid $dimgray;
+  border: 1px solid rgb(235, 233, 233);
   box-sizing: border-box;
   border-radius: 6px;
   text-decoration: none;
