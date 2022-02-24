@@ -5,58 +5,59 @@
   <div class="row d-flex justify-content-center">
     <div class="col-sm-12 col-md-8 col-lg-8 py-4">
       <% if @sent_bookings.exists? || @received_bookings.exists? %>
-        <div class="switch-holder">
-          <div class="switch-label">
-            <span>As a pupil</span>
+        <% if @sent_bookings.exists? && @received_bookings.exists? %>
+          <div class="switch-holder">
+            <div class="switch-label">
+              <span>As a pupil</span>
+            </div>
+            <div class="switch-toggle">
+              <input type="checkbox" id="choice">
+              <label for="choice"></label>
+            </div>
+            <div class="switch-label">
+              <span>As a Grandmaster</span>
+            </div>
           </div>
-          <div class="switch-toggle">
-            <input type="checkbox" id="choice">
-            <label for="choice"></label>
-          </div>
-          <div class="switch-label">
-            <span>As a Grandmaster</span>
-          </div>
+          <br>
+          <br>
+        <% end %>
+        <div id="pupil">
+          <% @sent_bookings.each do |booking| %>
+            <div class="booking-card">
+              <% if booking.status == "rejected" %>
+                <div class="rejected-card">
+              <% elsif booking.status == "accepted" %>
+                <div class="accepted-card">
+              <% elsif booking.status == "pending" %>
+                <div class="pending-card">
+              <% end %>
+                  Status : <%= booking.status %><br>
+                </div>
+              Your Grandmaster : <%= booking.grandmaster_user.name %><br>
+              Message : <%= booking.message %><br>
+            </div>
+            <br>
+          <% end %>
         </div>
-        <br>
-        <br>
 
-        <% @sent_bookings.each do |booking| %>
-          <div class="booking-card">
-            <% if booking.status == "rejected" %>
-              <div class="rejected-card">
-            <% elsif booking.status == "accepted" %>
-              <div class="accepted-card">
-            <% elsif booking.status == "pending" %>
-              <div class="pending-card">
-            <% end %>
-                Status : <%= booking.status %><br>
-              </div>
-            Message : <%= booking.message %><br>
-            Your Grandmaster : <%= booking.grandmaster_user.name %><br>
-          </div>
-          <br>
-        <% end %>
-        <br>
-        <br>
-        As a Grandmaster
-        <br>
-        <br>
-        <% @received_bookings.each do |booking| %>
-          <div class="booking-card">
-            <% if booking.status == "rejected" %>
-              <div class="rejected-card">
-            <% elsif booking.status == "accepted" %>
-              <div class="accepted-card">
-            <% elsif booking.status == "pending" %>
-              <div class="pending-card">
-            <% end %>
-                Status : <%= booking.status %><br>
-              </div>
-            Message : <%= booking.message %><br>
-            Your pupil : <%= booking.user.name %><br>
-          </div>
-          <br>
-        <% end %>
+        <div id="grandmaster">
+          <% @received_bookings.each do |booking| %>
+            <div class="booking-card">
+              <% if booking.status == "rejected" %>
+                <div class="rejected-card">
+              <% elsif booking.status == "accepted" %>
+                <div class="accepted-card">
+              <% elsif booking.status == "pending" %>
+                <div class="pending-card">
+              <% end %>
+                  Status : <%= booking.status %><br>
+                </div>
+              Your pupil : <%= booking.user.name %><br>
+              Message : <%= booking.message %><br>
+            </div>
+            <br>
+          <% end %>
+        </div>
       <% else %>
           You have no booking.
       <% end %>
