@@ -1,4 +1,12 @@
+<div class="container ">
+  <div class="row justify-content-center">
+    <div class="user_form">
       <%= simple_form_for([@grandmaster, @booking]) do |f| %>
         <%= f.input :message %>
-        <%= f.submit class: "hero-btn"%>
+        <div class="d-flex justify-content-center">
+          <%= f.submit class: "hero-btn"%>
+        </div>
       <% end %>
+    </div>
+  </div>
+</div>

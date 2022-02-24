@@ -3,7 +3,11 @@
   <div class="container">
     <div class="row mt-4 d-flex justify-content-around">
       <div class="gm-show-card w-75">
+        <% if @grandmaster.user.photo.attached? %>
+          <%= cl_image_tag @grandmaster.user.photo.key, class: "card-image-middle photo-chess" %>
+        <% else %>
           <img class="card-image-middle photo-chess" src="https://thezugzwangblog.com/wp-content/uploads/2020/07/kasparaov-1024x574.jpg" alt="Card">
+        <% end %>
           <div class="gm-info-container">
             <ul class="gm-info-list">
               <li><strong>Language</strong> - <%= @grandmaster.language.capitalize%></li>
