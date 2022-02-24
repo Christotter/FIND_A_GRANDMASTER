@@ -1,12 +1,15 @@
-<div class="hero-container">
-  <div class="hero-text-container">
-      <h1>FIND A GRANDSMASTER</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, et placeattempora nam, eveniet ex explicabo delectus, ratione deleniti repellat excepturi provident! Repellat adipisci in nemo atque dolorem eius voluptatem perspiciatis excepturi! In nihil iusto consectetur veritatis porro dolores cumque vitae nulla autem sequi!</p>
-      <a href="grandmasters"><button class=hero-btn>click me</button></a>
+<div class="container home-container">
+  <div class="row align-items-stretch h-100">
+    <div class="col-md-6 col-sm-8 offset-md-1">
+      <div class="hero-text-container">
+        <h1>FIND A GRANDMASTER</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, et placeattem excepturi provident! Repellat adipisci in nemo atque dolorem eius voluptatem perspiciatis excepturi! In nihil iusto consectetur veritatis porro dolores cumque vitae nulla autem sequi!</p>
+         <%= link_to "Check our Grandmasters", grandmasters_path, class: "hero-btn"%>
+      </div>
     </div>
+    <div class="col-sm-4 d-flex h-100 align-items-center">
+        <%= image_tag "components/home_img.jpg" , class: "home-image" %>
 
-
-      <div class="hero-img">
-    <%= image_tag "components/home_img.jpg"  %>
+    </div>
   </div>
 </div>
