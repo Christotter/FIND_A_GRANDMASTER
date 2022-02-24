@@ -3,7 +3,7 @@
       <%= simple_form_for(@grandmaster) do |f| %>
         <%= f.input :elo_rating %>
         <%= f.input :fide_id %>
-        <%= f.input :language, collection: [['English', 'en'], ['French', 'fr'], ['Spanish', 'sp']]%>
+        <%= f.input :language, collection: ['English', 'French', 'Spanish']%>
         <%= f.input :country %>
         <%= f.input :bio %>
         <%= f.submit class: "hero-btn justify-content-center" %>
