@@ -1,13 +1,13 @@
 .card {
- width: 405.33px;
- height: 336px;
- border-radius: 16px;
- border: 1px solid $gray;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-padding: 24px;
+  width: 405.33px;
+  height: 336px;
+  border-radius: 16px;
+  border: 1px solid $gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
 }
 
 .card .avatar {
@@ -22,6 +22,33 @@ padding: 24px;
   margin: 24px 0px;
 }
 
+.booking-card {
+  width: 300;
+  height: fit-content;
+  border-radius: 16px;
+  border: 1px solid $gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  margin-left: 30px;
+  background-color: $white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .card-body h5, p {
-  color: $gray
+  color: $gray;
+}
+
+.rejected-card {
+  color: $red;
+}
+
+.accepted-card {
+  color: $green;
+}
+
+.pending-card {
+  color: $blue;
 }
