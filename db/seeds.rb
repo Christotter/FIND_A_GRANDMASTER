@@ -74,9 +74,9 @@ gm6 = Grandmaster.new(fide_id: 10000000, elo_rating: 2800, country: 'United Stat
 gm6.save!
 gm7 = Grandmaster.new(fide_id: 1503014, elo_rating: 2865, country: 'Norway', bio: bio7, language: 'english', user: user7)
 gm7.save!
-gm8 = Grandmaster.new(fide_id: 24116068, elo_rating: 2772, country: 'Netherlands', bio: bio6, language: 'english', user: user8)
+gm8 = Grandmaster.new(fide_id: 24116068, elo_rating: 2772, country: 'Netherlands', bio: bio8, language: 'english', user: user8)
 gm8.save!
-gm9 = Grandmaster.new(fide_id: 700088, elo_rating: 2577, country: 'Hungary', bio: bio7, language: 'english', user: user9)
+gm9 = Grandmaster.new(fide_id: 700088, elo_rating: 2577, country: 'Hungary', bio: bio9, language: 'english', user: user9)
 gm9.save!
 
 puts 'Finished!'
