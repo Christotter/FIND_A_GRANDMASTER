@@ -48,7 +48,7 @@ h1 {
   max-width: 260px;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(1px 2px 10px #6d2ffd9c);
+  filter: drop-shadow(1px 2px 10px #0407af9c);
 
 }
 
@@ -59,7 +59,7 @@ h1 {
 
 .hero-btn:hover {
   color: black;
-  filter: drop-shadow(-2px 6px 11px #0da6ffd2);
+  filter: drop-shadow(-2px 6px 11px #cacaca5b);
   border: 1px solid $white;
 }
 
