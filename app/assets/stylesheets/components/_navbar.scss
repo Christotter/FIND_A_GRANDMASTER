@@ -27,10 +27,11 @@ color: white;
 
 .search{
   border-radius: 10px;
-  background-color: black;
-  color: white;
-  border-color: white;
+  background-color: $dim_border_color;
+  color: $dim_border_color;
+  border-color: $dim_border_color;
   width: 350px;
+  color: $white;
 }
 
 .search-button{
@@ -38,12 +39,13 @@ color: white;
   width: 50px;
   border-radius: 10px;
   color: $white;
-  background-color: $dimgray;
-  box-shadow: 1px 1px white;
+  background-color: $dim_border_color;
+  border-color: $dim_border_color;
+
 }
 
 .search-button:hover{
-  color: $gray;
+  color: $dim_border_color;
   background-color: $white;
 }
 
