@@ -31,7 +31,7 @@
           <%# avatar photo if it is sign in %>
            <% if user_signed_in? && current_user.photo %>
               <% image_link = current_user.photo%>
-              <%= image_tag image_link, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
+              <%# <%= image_tag image_link, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
             <% else %>
               <%= image_tag "components/user.svg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
            <% end %>
