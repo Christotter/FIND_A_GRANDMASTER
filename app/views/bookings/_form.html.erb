@@ -1,19 +1,21 @@
 <div class="container ">
   <div class="row justify-content-center">
-  <div class="class gm-info">
-    <%= cl_image_tag @grandmaster.user.photo.key, class: "avatar-large color-white" %>
-    <div class="text-center pb-5 coloration">
-    <p class="mt-4">Elo - <%= @grandmaster.elo_rating %> | Language: <%= @grandmaster.language.capitalize %></p>
-      <%= @grandmaster.bio %>
-    </div>
-    <div class="user_form">
-      <%= simple_form_for([@grandmaster, @booking]) do |f| %>
-        <%= f.input :message, class: "coloration" %>
-        <div class="d-flex justify-content-center">
-          <%= f.submit class: "hero-btn"%>
-        </div>
-      <% end %>
+  <div class="col-9">
+    <div class="class gm-info">
+      <%= cl_image_tag @grandmaster.user.photo.key, class: "avatar-large color-white" %>
+      <div class="text-center pb-5 coloration">
+      <p class="mt-4">Elo - <%= @grandmaster.elo_rating %> | Language: <%= @grandmaster.language.capitalize %></p>
+      <p class="text-start"><%= @grandmaster.bio %></p>
       </div>
-    </div>
+      <div class="user_form">
+        <%= simple_form_for([@grandmaster, @booking]) do |f| %>
+          <%= f.input :message, label_html: { class: "coloration" } %>
+          <div class="d-flex justify-content-center">
+            <%= f.submit class: "hero-btn"%>
+          </div>
+        <% end %>
+        </div>
+      </div>
+  </div>
   </div>
 </div>
