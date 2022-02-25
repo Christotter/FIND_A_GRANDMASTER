@@ -6,10 +6,10 @@
 }
 
 .test {
-  background-color: rgba(253, 253, 253, 0.096);
-  border: 1px solid rgba(253, 253, 253, 0.096);
+  background-color: $dim_border_color;
+  border: 1px solid $dim_border_color;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px;
 
 }
 
@@ -26,29 +26,43 @@
 h1 {
   font-size: 48px;
   color: $white;
+  filter: drop-shadow(2px -4px 16px #000000);
   }
 
   p {
     color: $white;
     font-size: 16px;
+    filter: drop-shadow(2px -4px 16px #000000);
+
   }
 
 
 .hero-btn {
   padding: 10px 20px;
-  background: $white;
-  border: 1px solid rgb(235, 233, 233);
+  background: white;
+  border: 1px solid $dim_border_color;
   box-sizing: border-box;
   border-radius: 6px;
   text-decoration: none;
-  color: black;
+  color: $gray;
+  max-width: 260px;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(1px 2px 10px #0407af9c);
+
+}
+
+.hero-btn a {
+  font-weight: 500;
+  align-content: center;
 }
 
 .hero-btn:hover {
   color: black;
-  border: 1px solid black;
+  filter: drop-shadow(-2px 6px 11px #cacaca5b);
+  border: 1px solid $white;
 }
 
 .home-image {
-  width: 100%;
+  width: 100%
 }
