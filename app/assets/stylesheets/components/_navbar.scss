@@ -1,11 +1,12 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: $white;
   padding: 0px;
 }
 
 .container-fluid {
-    box-shadow: inset 0px -1px 0px #F1F1F1;
+  background-color: $dim_border_color;
+  border-radius: 16px;
+
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -16,9 +17,16 @@
   width: 188px;
   height: 48px;
   object-fit: cover;
+  filter: invert(1);
 }
 
 .navbar-lewagon a {
   margin: 0 12px;
+
+}
+
+
+.nav-link {
+color: white;
 
 }
