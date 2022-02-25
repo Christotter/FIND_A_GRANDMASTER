@@ -30,7 +30,7 @@
            <% if user_signed_in? && current_user.photo.attached? %>
               <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
             <% else %>
-              <%= image_tag "components/user.svg", class: "avatar_2 dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
+              <%= image_tag "components/user.svg", class: "avatar avatar_2 dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" } %>
            <% end %>
 
           <%# sign in - sign out cases for dropdown %>
