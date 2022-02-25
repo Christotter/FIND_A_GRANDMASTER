@@ -28,6 +28,16 @@ class BookingsController < ApplicationController
     end
   end
 
+  def update
+    @booking = Booking.find(params[:id])
+    @booking.update(booking_params)
+    @sent_bookings = current_user.sent_bookings
+    @received_bookings = current_user.received_bookings
+
+    # no need for app/views/restaurants/update.html.erb
+    redirect_to bookings_path(@booking)
+  end
+
   def destroy
     @booking = Booking.find(params[:id])
     # @list = @bookmark.list
@@ -36,9 +46,23 @@ class BookingsController < ApplicationController
     # redirect_to user_path(@user)
   end
 
+  def accept
+    @booking = Booking.find(params[:booking_id])
+    @booking.status = "accepted"
+    @booking.save
+    redirect_to bookings_path
+  end
+
+  def reject
+    @booking = Booking.find(params[:booking_id])
+    @booking.status = "rejected"
+    @booking.save
+    redirect_to bookings_path
+  end
+
   private
 
   def booking_params
-    params.require(:booking).permit(:message)
+    params.require(:booking).permit(:message, :status)
   end
 end

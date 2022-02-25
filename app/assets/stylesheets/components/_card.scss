@@ -32,7 +32,7 @@ h1 {
   height: fit-content;
   border-radius: 16px;
   border: 1px solid $gray;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -61,4 +61,10 @@ h1 {
 .card-text {
   color: $white;
   text-align: left;
+}
+
+.name-card {
+  font-weight: 900;
+  // position: absolute;
+  // text-align: left;
 }
