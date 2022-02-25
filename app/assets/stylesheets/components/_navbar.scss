@@ -30,3 +30,24 @@
 color: white;
 
 }
+
+.search{
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.search-button{
+  height: 30px;
+  width: 50px;
+  border-radius: 10px;
+  color: $white;
+  background-color: $dimgray;
+  box-shadow: 1px 1px white;
+}
+
+.search-button:hover{
+  color: $gray;
+  background-color: $white;
+}

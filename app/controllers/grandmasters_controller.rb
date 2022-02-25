@@ -2,7 +2,11 @@ class GrandmastersController < ApplicationController
   # before_action :set_user, only: %i[ show ]
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
-    @grandmasters = Grandmaster.all
+    if params[:query]
+      @grandmasters = Grandmaster.joins(:user).where('name ILIKE ?', "%#{params[:query]}%")
+    else
+      @grandmasters = Grandmaster.all
+    end
   end
 
   def show
