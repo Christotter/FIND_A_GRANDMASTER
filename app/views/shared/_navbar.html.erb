@@ -6,10 +6,22 @@
       </div>
 
 </a>
-<div class="search-bar"> <%= image_tag "components/search_white.svg"   %></div>
+<div class="topnav search-bar">
+      <a class="active " href="#home"></a>
+      <form action="/grandmasters" method="get">
+        <input type="text" name='query' class="search" placeholder="Search.." value="<%= params[:query] %>">
+        <button type="submit" class="search-button">Go</button>
+      </form>
+    </div>
+
+<%# <div class="search-bar"><%= image_tag "components/search_white.svg"  %> </div>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
+      <%# <%= image_tag "components/search_white.svg"  %>
     </button>
+
+
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
