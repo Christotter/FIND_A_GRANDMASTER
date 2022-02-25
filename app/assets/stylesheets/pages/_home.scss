@@ -2,6 +2,15 @@
 .home-container {
   height: calc(100vh - 74px);
   color: $white;
+  margin-top: 200px;
+}
+
+.test {
+  background-color: rgba(253, 253, 253, 0.096);
+  border: 1px solid rgba(253, 253, 253, 0.096);
+  border-radius: 16px;
+  padding: 20px;
+
 }
 
 

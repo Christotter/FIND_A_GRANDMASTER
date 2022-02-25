@@ -1,11 +1,13 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: $white;
   padding: 0px;
 }
 
 .container-fluid {
-    box-shadow: inset 0px -1px 0px #F1F1F1;
+
+    background-color: $white;
+  border: 1px solid $dim_border_color;
+
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -20,5 +22,11 @@
 
 .navbar-lewagon a {
   margin: 0 12px;
+
+}
+
+
+.nav-link {
+
 
 }
