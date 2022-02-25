@@ -1,12 +1,14 @@
 <div class="container ">
   <div class="row justify-content-center">
-  <div class="class gm-info">
-    <h3>Reservation for <%= @grandmaster.user.name %> - <%= @grandmaster.elo_rating %>Elo</h3>
+  <div class="class gm-info align-center">
     <%= cl_image_tag @grandmaster.user.photo.key, class: "avatar-large" %>
-    <%= @grandmaster.bio %>
+    <div class="text-center pb-5">
+      <h3>Reservation for <%= @grandmaster.user.name %></h3>
+      <%= @grandmaster.bio %>
+    </div>
     <div class="user_form">
       <%= simple_form_for([@grandmaster, @booking]) do |f| %>
-        <%= f.input :message %>
+        <%= f.input :message class: "message-color"%>
         <div class="d-flex justify-content-center">
           <%= f.submit class: "hero-btn"%>
         </div>
