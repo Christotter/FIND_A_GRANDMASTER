@@ -16,7 +16,7 @@
 }
 
 .user-sign-form{
-  background-color: $white;
+  background-color: $dim_border_color;
   width: 500px;
   border: 1px solid #B4B4B4;
   box-sizing: border-box;
@@ -24,4 +24,18 @@
   padding: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  a {
+    color: white;
+  }
+
+  label {
+    color: white;
+  }
+}
+
+
+.logo_new {
+  filter: invert(1);
+  margin-bottom: 20px;
 }
