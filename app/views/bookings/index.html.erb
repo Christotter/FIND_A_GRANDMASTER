@@ -33,7 +33,7 @@
               <% end %>
                   Status : <%= booking.status %><br>
                 </div>
-              Your Grandmaster : <%= booking.grandmaster_user.name %><br>
+              Your Grandmaster : <strong><%= booking.grandmaster_user.name %></strong><br>
               Message : <%= booking.message %><br>
             </div>
             <br>
@@ -52,8 +52,16 @@
               <% end %>
                   Status : <%= booking.status %><br>
                 </div>
-              Your pupil : <%= booking.user.name %><br>
+              Your pupil : <strong><%= booking.user.name %></strong><br>
               Message : <%= booking.message %><br>
+              <% if booking.status == "pending" %>
+                <div class="booking-btn">
+                  <%= link_to 'Accept', booking_accept_path(booking), method: "patch" %>
+                </div>
+                <div class="booking-btn">
+                  <%= link_to 'Reject', booking_reject_path(booking), method: "patch" %>
+                </div>
+              <% end %>
             </div>
             <br>
           <% end %>

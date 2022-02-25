@@ -27,7 +27,7 @@
   height: fit-content;
   border-radius: 16px;
   border: 1px solid $gray;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -55,4 +55,10 @@
 
 .card-text {
   color: $dimgray;
+}
+
+.name-card {
+  font-weight: 900;
+  // position: absolute;
+  // text-align: left;
 }
