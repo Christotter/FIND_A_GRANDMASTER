@@ -1,5 +1,5 @@
 .gm-form{
- /* padding: 0px 50px;*/
+
   max-width: 700px;
   height: 750px;
   background-color: $dim_border_color;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
   border-radius: 16px;
   padding: 50px;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 50px;
 }
 
@@ -20,7 +20,20 @@
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
-.h1_gm{
+.h1_gm {
   padding: 20px;
-  color: $gray;
+  color: $white;
+}
+
+
+.form-label {
+  color: $white;
+}
+
+.logo_new {
+filter: invert(1);
+}
+
+.text_form {
+  color: $white;
 }
