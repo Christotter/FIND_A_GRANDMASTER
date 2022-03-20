@@ -68,15 +68,16 @@ h1 {
 }
 
 .cards-index {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
-    grid-gap: 16px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards-index {
     grid-template-columns: 1fr;
+    margin: 10px 10px 10px 10px;
   }
 
   .info-home-gm {
@@ -88,6 +89,18 @@ h1 {
     h1 {
       font-size: 40px;
     }
+  }
+
+  .search-button {
+    margin-top: 20px;
+  }
+
+  .search {
+    width: 250px;
+  }
+
+  .gm-margin {
+    margin-bottom: 20px;
   }
 }
 
@@ -95,6 +108,7 @@ h1 {
 @media (min-width: 576px) {
   .cards-index {
     grid-template-columns: 1fr;
+    margin: 10px 10px 10px 10px;
   }
 
   .info-home-gm {
@@ -107,12 +121,25 @@ h1 {
       font-size: 40px;
     }
   }
+
+  .search-button {
+    margin-top: 20px;
+  }
+
+  .search {
+    width: 250px;
+  }
+
+  .gm-margin {
+    margin-bottom: 20px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards-index {
     grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 30px 30px;
   }
 
   .info-home-gm {
@@ -124,17 +151,21 @@ h1 {
 @media (min-width: 992px) {
   .cards-index {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 50px 50px 50px;
   }
 
   .info-home-gm {
     text-align: justify;
   }
+
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards-index {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 50px 50px 50px;
   }
 
   .info-home-gm {

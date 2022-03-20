@@ -1,9 +1,7 @@
 
 <h1 class="text-center">Our Grandmasters</h1>
-<div class="cards-index">
-  <div>
+  <div class="cards-index">
     <% @grandmasters.each do |grandmaster|%>
-      <div>
         <%= link_to grandmaster_path(grandmaster), class: "text-decoration-none" do %>
             <div class="card">
               <% if grandmaster.user.photo.attached? %>
@@ -17,7 +15,5 @@
               </div>
             </div>
         <% end %>
-        </div>
     <% end %>
   </div>
-</div>
