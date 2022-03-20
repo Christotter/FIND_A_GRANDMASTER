@@ -1,9 +1,9 @@
 
 <h1 class="text-center">Our Grandmasters</h1>
-<div class="container">
-  <div class="row mt-4">
+<div class="cards-index">
+  <div>
     <% @grandmasters.each do |grandmaster|%>
-      <div class="col-sm-12 col-md-4 col-lg-4 py-3">
+      <div>
         <%= link_to grandmaster_path(grandmaster), class: "text-decoration-none" do %>
             <div class="card">
               <% if grandmaster.user.photo.attached? %>
