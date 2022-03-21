@@ -126,7 +126,26 @@ h1 {
   }
 
   .avatar-large {
-    max-width: 180px;
+    max-width: 170px;
+  }
+
+  #new_grandmaster {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
+
+  #booking-status {
+    margin-right: 20px;
+  }
+
+  .notice {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
 // Small devices (landscape phones, 576px and up)
@@ -184,6 +203,25 @@ h1 {
   .avatar-large {
     max-width: 180px;
   }
+
+  #new_grandmaster {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
+
+  #booking-status {
+    margin-right: 20px;
+  }
+
+  .notice {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -234,6 +272,16 @@ h1 {
     font-size: 11px;
     padding-top: 15px;
   }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
+
+  .notice {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -246,6 +294,11 @@ h1 {
   .info-home-gm {
     text-align: justify;
   }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -257,5 +310,10 @@ h1 {
 
   .info-home-gm {
     text-align: justify;
+  }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
   }
 }
