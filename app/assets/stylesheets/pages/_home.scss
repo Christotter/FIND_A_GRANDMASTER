@@ -116,6 +116,37 @@ h1 {
   .hero-btn {
     max-width: none;
   }
+
+  .text-center {
+    margin-top: 0;
+  }
+
+  .h1-book-gm {
+    margin-top: 35px;
+  }
+
+  .avatar-large {
+    max-width: 170px;
+  }
+
+  #new_grandmaster {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
+
+  #booking-status {
+    margin-right: 20px;
+  }
+
+  .notice {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
@@ -160,10 +191,41 @@ h1 {
   .hero-btn {
     max-width: none;
   }
+
+  .text-center {
+    margin-top: 0;
+  }
+
+  .h1-book-gm {
+    margin-top: 35px;
+  }
+
+  .avatar-large {
+    max-width: 180px;
+  }
+
+  #new_grandmaster {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
+
+  #booking-status {
+    margin-right: 20px;
+  }
+
+  .notice {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .cards-index {
     grid-template-columns: 1fr 1fr;
     margin: 30px 30px 30px 30px;
@@ -171,6 +233,54 @@ h1 {
 
   .info-home-gm {
     text-align: justify;
+  }
+
+  .hero-text-container {
+    margin-top: -40px;
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .search-button {
+    margin-top: 20px;
+  }
+
+  .search {
+    width: 200px;
+  }
+
+  .gm-margin {
+    margin-bottom: 20px;
+  }
+
+  .gm-show-card {
+    padding: 10px 10px 10px 10px;
+    display: inline;
+  }
+
+  .photo-chess {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .hero-btn {
+    max-width: none;
+  }
+
+  .nav-link {
+    font-size: 11px;
+    padding-top: 15px;
+  }
+
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
+
+  .notice {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -185,7 +295,15 @@ h1 {
     text-align: justify;
   }
 
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
 
+  #book-me-id {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -199,4 +317,13 @@ h1 {
     text-align: justify;
   }
 
+  #h2-booking-status {
+    color: white !important;
+    text-align: center;
+  }
+
+  #book-me-id {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
 }

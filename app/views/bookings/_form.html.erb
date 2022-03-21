@@ -3,7 +3,7 @@
   <div class="col-9">
     <div class="class gm-info">
       <%= cl_image_tag @grandmaster.user.photo.key, class: "avatar-large color-white" %>
-      <div class="text-center pb-5 coloration">
+      <div class="text-center coloration">
       <p class="mt-4">Elo - <%= @grandmaster.elo_rating %> | Language: <%= @grandmaster.language.capitalize %></p>
       <p class="text-start"><%= @grandmaster.bio %></p>
       </div>

@@ -6,5 +6,9 @@
         <%= f.input :language, collection: ['English', 'French', 'Spanish']%>
         <%= f.input :country %>
         <%= f.input :bio %>
-        <%= f.submit class: "hero-btn justify-content-center" %>
+        <div class="d-flex justify-content-center">
+          <div>
+            <%= f.submit class: "hero-btn" %>
+          </div>
+        </div>
       <% end %>

@@ -39,3 +39,25 @@
   filter: invert(1);
   margin-bottom: 20px;
 }
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .user-sign-form {
+    width: 350px;
+  }
+
+  .gm-form {
+    padding: 0px;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .user-sign-form {
+    width: 350px;
+  }
+
+  .gm-form {
+    padding: 0px;
+  }
+}
