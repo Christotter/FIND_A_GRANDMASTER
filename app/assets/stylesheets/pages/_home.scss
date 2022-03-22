@@ -222,6 +222,10 @@ h1 {
     margin-top: 20px;
     margin-left: 20px;
   }
+
+  .home-image {
+    width: 100%
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -282,7 +286,23 @@ h1 {
     margin-top: 20px;
     margin-left: 20px;
   }
+
+  .info-home-gm {
+    text-align: justify;
+  }
+
+  .hero-text-container {
+    margin-top: -40px;
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .home-image {
+    margin-top: 56px;
+  }
 }
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -304,6 +324,7 @@ h1 {
     margin-left: 150px;
     margin-top: 20px;
   }
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
